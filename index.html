@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>curd project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="curd.css"> 
+        <link rel="stylesheet" href="bootstrap.css"> 
+        
+    </head>
+    <body>
+        <div class="header">
+            <div class="row">
+                <div class="col-12  d-flex justify-content-around p-3 bg-dark text-white">
+                    <h5>Curd list</h5>
+                    <input id="search"  type="text" placeholder="search" oninput="searchData()"/>
+                </div>
+            </div>
+        </div>
+        <div class="container main">
+            <div class="row">
+                <div class="col-12 p-3 text-center" >
+                    <h3>Welcome To Curd Operation</h3>
+                </div>
+            </div>
+                <div class="row wrapper p-5  bg-white">
+                    <div class="col-12 d-flex text-center justify-content-center">
+                        <input type="text" class="form-control mr-1" id="userInput" placeholder="enter details">
+                        <button type="button" class="btn btn-success mr-1" id="addData" onclick="addTask()">Add data</button>
+                        <button type="button" class="btn btn-success mr-1 hidden" style="display: none;" id="saveData" onclick="saveData()">Save data</button>
+                        <button type="button" class="btn btn-danger" onclick="deleteAll()">Delete all</button>
+                        <span class="text-danger small align-self-center" id="error"></span>
+                    </div>
+                    <table class="table table-striped mt-4">
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </body>
+    <script src="index.js"></script>
+    </html>
+

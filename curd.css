@@ -1,0 +1,18 @@
+body{
+    background-color: #F8F9F9 !important;
+}
+.container.main{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+.wrapper{
+    box-shadow: -1px 1px 2px 1px #ebedef
+}
+#userInput{
+    width: 50%;
+}
+#search{
+width: 22%
+}
